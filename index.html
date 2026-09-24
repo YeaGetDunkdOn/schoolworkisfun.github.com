@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- This changes what the browser tab says for teachers -->
     <title>📘 School Work Is Fun 📘</title>
     <style>
         body {
@@ -17,17 +16,26 @@
         h1 {
             color: #4da6ff;
             font-size: 3rem;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
             text-shadow: 2px 2px #0052cc;
         }
+        .notice {
+            background: #ffcc00;
+            color: #000;
+            font-weight: bold;
+            padding: 8px;
+            margin-bottom: 25px;
+            border-radius: 5px;
+            display: inline-block;
+        }
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
             padding: 20px;
         }
         .game-card {
@@ -38,9 +46,14 @@
             text-decoration: none;
             color: white;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             transition: transform 0.2s, background-color 0.2s;
             box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
         }
         .game-card:hover {
             transform: scale(1.05);
@@ -52,16 +65,46 @@
 <body>
 
     <div class="container">
-        <!-- Sneaky study theme header -->
         <h1>📘 School Work Is Fun 📘</h1>
-        <p>Select a learning capsule module below to begin your independent study session!</p>
+        <div class="notice">⚠️ PANIC BUTTON ACTIVATED: Press the "P" key on your keyboard at any time to instantly hide this site!</div>
+        <p>Select an assignment pathway module below to launch your interactive workstation session:</p>
         
         <div class="grid">
-            <!-- Hidden game pathways disguised as school lessons -->
+            <!-- All 16 requested game links formatted as sneaky school lessons -->
             <a class="game-card" href="slope.html">📐 Math Module: Slope Velocity</a>
             <a class="game-card" href="retro-bowl.html">🏈 Physics Module: Retro Trajectory</a>
+            <a class="game-card" href="drive-mad.html">⚙️ Engineering Module: Torque & Stress</a>
+            <a class="game-card" href="run-3.html">🌌 Astronomy Module: Cosmic Orbit</a>
+            <a class="game-card" href="bitlife.html">📊 Social Studies: Economic Decisions</a>
+            <a class="game-card" href="subway-surfers.html">🗺️ Geography Module: Urban Navigation</a>
+            <a class="game-card" href="gladihoppers.html">🏛️ History Module: Roman Gladiatorial Combat</a>
+            <a class="game-card" href="escape-road-1.html">🚗 Logistics 101: Emergency Escape Routes</a>
+            <a class="game-card" href="escape-road-2.html">🚛 Advanced Logistics: Asset Relocation II</a>
+            <a class="game-card" href="escape-road-3.html">🏎️ Terminal Dynamics: Urban Navigation III</a>
+            <a class="game-card" href="mario-64.html">🏰 Architecture Study: 3D Castle Topography</a>
+            <a class="game-card" href="college-bowl.html">🎓 Campus Athletics: Collegiate Trajectories</a>
+            <a class="game-card" href="ragdoll-sim.html">🧍 Anatomy Lab: Kinetic Impact Simulations</a>
+            <a class="game-card" href="melon-sandbox.html">🍉 Botany Sandbox: Cellular Structure Physics</a>
+            <a class="game-card" href="fnf.html">🎵 Auditory Arts: Rhythmic Cadence Evaluation</a>
+            <a class="game-card" href="monkey-mart.html">🐒 Microeconomics: Automated Retail Management</a>
+            <a class="game-card" href="rowdy-city.html">🤼 Sociology Seminar: Urban Conflict Resolution</a>
+            <a class="game-card" href="push-your-luck.html">🎲 Probability Theory: Statistical Risk Analysis</a>
+            <a class="game-card" href="final-earth-1.html">🌱 Eco-System Planning: Sustainable Colony Dev I</a>
+            <a class="game-card" href="final-earth-2.html">🚀 Aerospace Expansion: Colony Resource Management II</a>
+            <a class="game-card" href="weave-silk.html">🎨 Creative Arts: Interactive Symmetric Geometry</a>
         </div>
     </div>
+
+    <!-- The Hidden Panic Script Listener -->
+    <script>
+        document.addEventListener('keydown', function(event) {
+            // Checks if the user presses lower-case 'p' or upper-case 'P'
+            if (event.key === 'p' || event.key === 'P') {
+                // Instantly redirects your browser tab straight to Google Classroom
+                window.location.replace("https://classroom.google.com");
+            }
+        });
+    </script>
 
 </body>
 </html>
