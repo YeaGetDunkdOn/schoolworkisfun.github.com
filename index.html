@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Edition Arcade</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ffcc00;
+            font-size: 3rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px #ff4500;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+        .game-card {
+            background: #1e1e1e;
+            border: 3px solid #ff4500;
+            border-radius: 12px;
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+        .game-card:hover {
+            transform: scale(1.05);
+            background-color: #ff4500;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>📘 School Work Is Fun 📘</h1>
+        <p>Click a game card below to start playing instantly!</p>
+        
+        <div class="grid">
+            <!-- This is where your games will go. We will link them next! -->
+            <a class="game-card" href="slope.html">🕹️ Play Slope</a>
+            <a class="game-card" href="retro-bowl.html">🏈 Play Retro Bowl</a>
+        </div>
+    </div>
+
+</body>
+</html>
